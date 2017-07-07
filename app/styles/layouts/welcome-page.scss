@@ -1,0 +1,17 @@
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  hr {
+    width: 12rem;
+  }
+
+  > * {
+    max-width: 30%;
+  }
+}

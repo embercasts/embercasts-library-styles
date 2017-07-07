@@ -1,0 +1,32 @@
+.review-list {
+  .review {
+    padding: ($m-gutter * 2) 0;
+    border-top: 1px $c-border solid;
+
+    > * {
+      margin: 0;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+
+      > * {
+        margin: 0;
+      }
+    }
+
+    .review-user {
+      font-weight: bold;
+    }
+
+    &:hover {
+      background: $c-bg-hover;
+    }
+
+    > * + * {
+      margin-top: $m-gutter;
+    }
+  }
+
+}

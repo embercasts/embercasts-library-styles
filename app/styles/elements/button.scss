@@ -1,0 +1,90 @@
+[class^=btn] {
+  display: inline-block;
+  padding: ($m-gutter * 0.8) $m-gutter;
+  border: 0;
+  border-radius: $m-border-radius;
+
+  background: $c-secondary;
+  color: $c-white;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-new,
+.btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 50%;
+  background: $c-secondary;
+  font-size: 2rem;
+}
+
+.btn-new {
+  &::before {
+    content: '+';
+  }
+}
+
+.btn-back {
+  font-size: 1.8rem;
+
+  &::before {
+    font-family: FontAwesome;
+    content: '\f177';
+  }
+}
+
+.btn-pop {
+  background: $c-primary-pop;
+}
+
+.btn-recessed {
+  background: $c-primary-recessed;
+}
+
+.btn-secondary {
+  background: $c-secondary;
+}
+
+.btn-reset {
+  background: $c-border;
+  color: $c-text;
+}
+
+.btn-clear {
+  background: none;
+  color: $c-secondary;
+
+  &:hover {
+    background: $c-bg-hover;
+  }
+}
+
+.btn-submit {
+  background: $c-secondary;
+}
+
+.btn-trigger {
+  width: 100%;
+  border: 1px $c-border solid;
+  background: $c-bg;
+  color: $c-text;
+}
+
+.btn-add {
+  &::before {
+    content: '+';
+    margin-right: $m-gutter / 4;
+  }
+}
+
+.actions {
+  > * + * {
+    margin-left: $m-gutter / 2;
+  }
+}

@@ -1,0 +1,56 @@
+.field {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: $c-primary;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .btn-trigger {
+    width: 100%;
+    margin-top: $m-gutter / 4;
+  }
+
+  & + * {
+    margin-top: $m-gutter;
+  }
+
+  > * + * {
+    margin-top: $m-gutter / 2;
+  }
+}
+
+input,
+textarea {
+  display: block;
+
+  padding: $m-gutter / 2;
+
+  border: 1px $c-border-input solid;
+  border-radius: $m-border-radius-sm;
+  outline: none;
+
+  background: $c-bg;
+  color: $c-primary;
+  font: inherit;
+
+  &:focus {
+    border-bottom-color: $c-primary;
+  }
+
+  &::placeholder {
+    color: $c-primary;
+    opacity: 0.6;
+  }
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  > * + * {
+    margin-left: $m-gutter / 2;
+  }
+}

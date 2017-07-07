@@ -1,0 +1,35 @@
+.main-nav {
+  background: $c-bg;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .logo {
+    margin: 0;
+    padding: $m-gutter * 2;
+
+    color: $c-primary;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    a {
+      display: block;
+      padding: $m-gutter ($m-gutter * 2);
+
+      &.active {
+        background: $c-active-bg;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background: $c-bg-hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.collection {
+  > * {
+    margin: 0;
+    padding: $m-gutter;
+    border: 1px $c-border solid;
+    border-radius: $m-border-radius;
+
+    &:hover {
+      background: $c-bg-hover;
+    }
+  }
+
+  > * + * {
+    margin-top: $m-gutter / 2;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    > * + * {
+      &::before {
+        margin: 0 $m-gutter / 2;
+        content: '-';
+      }
+    }
+  }
+
+  em {
+    color: $c-primary;
+    opacity: 0.4;
+  }
+}

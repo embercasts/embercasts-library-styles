@@ -1,0 +1,22 @@
+.book-list {
+  .book {
+    display: flex;
+    justify-content: space-between;
+
+    padding: ($m-gutter * 2) 0;
+    border-top: 1px $c-border solid;
+
+    &:hover {
+      background: $c-bg-hover;
+    }
+  }
+
+  .book-title {
+    font-weight: bold;
+  }
+
+  a {
+    color: $c-secondary;
+    text-decoration: none;
+  }
+}

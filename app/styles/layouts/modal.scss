@@ -1,0 +1,60 @@
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  padding: ($m-gutter * 4) ($m-gutter * 2);
+  z-index: 10;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background: $c-shadow;
+    content: '';
+  }
+}
+
+.modal-card {
+  position: relative;
+  width: 100%;
+  max-width: $m-content-max-width;
+  background: $c-white;
+
+  box-shadow: 0 0 0.4rem $c-shadow;
+}
+
+.modal-heading {
+  margin: 0;
+  padding: $m-gutter ($m-gutter * 2);
+
+  background: $c-primary;
+  color: $c-white;
+}
+
+.modal-content {
+  padding: $m-gutter * 2;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: $m-gutter ($m-gutter * 2);
+  border-top: 1px $c-border solid;
+
+  background: $c-bg;
+
+  > * + * {
+    margin-left: $m-gutter / 2;
+  }
+}
