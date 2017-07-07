@@ -1,0 +1,32 @@
+html {
+  color: $c-text;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  align-self: center;
+  max-width: 100%;
+}
