@@ -1,4 +1,6 @@
 /* eslint-env node */
+const semver = require('semver');
+
 module.exports = {
   description: '',
 
@@ -6,11 +8,19 @@ module.exports = {
 
   },
 
-  afterInstall: function() {
-    return this.addPackagesToProject(
-      [
-        { name: 'ember-cli-sass' }
-      ]
-    );
+  afterInstall: function({ project }) {
+    const emberSource = project.addonPackages['ember-source'];
+    const emberVersion = emberSource.pkg.version;
+
+    const packages = [
+      { name: 'ember-cli-sass' },
+    ];
+
+    // Installs Ember Import Blueprints if < 2.16
+    if (semver.lt(emberVersion, '2.16.0')) {
+      packages.push({ name: 'ember-import-blueprints' })
+    }
+
+    return this.addPackagesToProject(packages);
   }
 };
