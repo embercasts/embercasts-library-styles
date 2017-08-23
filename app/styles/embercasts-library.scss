@@ -23,19 +23,19 @@ $m-border-radius: 0.4rem;
 $m-border-radius-sm: 0.2rem;
 $m-content-max-width: 70rem;
 
-@import 'reset';
-@import 'layout';
-@import 'helpers';
-@import 'elements/button';
-@import 'elements/form';
-@import 'layouts/welcome-page';
-@import 'layouts/panel';
-@import 'layouts/slide-out';
-@import 'layouts/modal';
-@import 'components/main-nav';
-@import 'components/collection';
-@import 'components/review';
-@import 'components/book';
+@import 'embercasts-library/reset';
+@import 'embercasts-library/layout';
+@import 'embercasts-library/helpers';
+@import 'embercasts-library/elements/button';
+@import 'embercasts-library/elements/form';
+@import 'embercasts-library/layouts/welcome-page';
+@import 'embercasts-library/layouts/panel';
+@import 'embercasts-library/layouts/slide-out';
+@import 'embercasts-library/layouts/modal';
+@import 'embercasts-library/components/main-nav';
+@import 'embercasts-library/components/collection';
+@import 'embercasts-library/components/review';
+@import 'embercasts-library/components/book';
 // @import "bulma";
 
 .panel-block > .level {
