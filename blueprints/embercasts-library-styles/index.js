@@ -14,11 +14,12 @@ module.exports = {
 
     const packages = [
       { name: 'ember-cli-sass' },
+      { name: 'ember-font-awesome' }
     ];
 
     // Installs Ember Import Blueprints if < 2.16
     if (semver.lt(emberVersion, '2.16.0')) {
-      packages.push({ name: 'ember-import-blueprints' })
+      packages.push({ name: 'ember-import-blueprints' });
     }
 
     return this.addPackagesToProject(packages);
