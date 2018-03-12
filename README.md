@@ -1,26 +1,7 @@
 # embercasts-library-styles
 
-This README outlines the details of collaborating on this Ember addon.
+This addon provides styles for the Embercasts Library application built in the embercasts.com fullstack Ember courses.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd embercasts-library-styles`
-* `npm install`
-
-## Running
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+* `ember install embercasts-library-styles`
