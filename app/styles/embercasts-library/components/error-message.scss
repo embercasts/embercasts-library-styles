@@ -1,9 +1,3 @@
 .error-message {
-  padding: 0.5rem;
-
-  color: $c-secondary;
-  background: rgba($c-secondary, 0.2);
-  margin-bottom: 1rem;
-  border: currentColor solid 1px;
-  border-radius: 0.2rem;
+  color: darken($c-secondary, 20%);
 }
