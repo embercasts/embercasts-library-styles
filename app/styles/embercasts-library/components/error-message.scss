@@ -1,3 +1,13 @@
 .error-message {
   color: darken($c-secondary, 20%);
 }
+
+.error-alert {
+  margin-bottom: $m-gutter;
+  padding: $m-gutter / 2;
+  border: currentColor solid 1px;
+  border-radius: $m-border-radius-sm;
+
+  color: darken($c-secondary, 20%);
+  background: rgba($c-secondary, 0.2);
+}
