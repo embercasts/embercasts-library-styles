@@ -38,20 +38,8 @@
   }
 
   .current-user {
-    display: flex;
-    align-items: center;
     background: $c-active-bg;
 
     padding: $m-gutter ($m-gutter * 2);
-
-    img {
-      border-radius: 50%;
-      height: 3rem;
-      width: 3rem;
-    }
-
-    * + * {
-      margin-left: $m-gutter;
-    }
   }
 }
