@@ -47,6 +47,11 @@
   &.velocity-animating {
     overflow-y: visible;
   }
+
+  > &.liquid-container {
+    flex-grow: 1;
+    background: $c-white;
+  }
 }
 
 .slide-out-heading {

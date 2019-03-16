@@ -1,27 +1,27 @@
 // Colors
-$c-primary: #432b4f;
-$c-secondary: #ea6d77;
-$c-white: #fff;
-$c-black: #000;
-$c-text: #2A3236;
-$c-bg: #f8f9fc;
-$c-border: #e9e9e9;
-$c-border-search: #e6ecf5;
-$c-border-input: #ccc;
-$c-active-bg: #f3f5f9;
-$c-bg-hover: rgba($c-active-bg, 0.8);
-$c-shadow: rgba($c-black, 0.4);
-$c-haze: rgba($c-white, 0.4);
+$c-primary: #432b4f !default;
+$c-secondary: #ea6d77 !default;
+$c-white: #fff !default;
+$c-black: #000 !default;
+$c-text: #2A3236 !default;
+$c-bg: #f8f9fc !default;
+$c-border: #e9e9e9 !default;
+$c-border-search: #e6ecf5 !default;
+$c-border-input: #ccc !default;
+$c-active-bg: #f3f5f9 !default;
+$c-bg-hover: rgba($c-active-bg, 0.8) !default;
+$c-shadow: rgba($c-black, 0.4) !default;
+$c-haze: rgba($c-white, 0.4) !default;
 
 // Derived Colors
-$c-primary-pop: #7f5396;
-$c-primary-recessed: #35223f;
+$c-primary-pop: #7f5396 !default;
+$c-primary-recessed: #35223f !default;
 
 // Measures
-$m-gutter: 1rem;
-$m-border-radius: 0.4rem;
-$m-border-radius-sm: 0.2rem;
-$m-content-max-width: 70rem;
+$m-gutter: 1rem !default;
+$m-border-radius: 0.4rem !default;
+$m-border-radius-sm: 0.2rem !default;
+$m-content-max-width: 70rem !default;
 
 @import 'embercasts-library/reset';
 @import 'embercasts-library/layout';
